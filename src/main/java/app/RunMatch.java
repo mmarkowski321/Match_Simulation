@@ -1,3 +1,7 @@
+package app;
+
+import io.GetNumber;
+
 import java.util.Random;
 
 public class RunMatch {

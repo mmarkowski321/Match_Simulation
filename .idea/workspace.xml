@@ -5,28 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/DataTeams" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GetNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/GetTeams.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RunLigue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/RunMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Shots.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/SoccerMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Table.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Team.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/GetTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/RunMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Shots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Shots.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/SoccerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +50,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/IO_Stream/lab-5-strumienie",
     "onboarding.tips.debug.path": "C:/repositoryProjectPO/MatchSimulation/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
@@ -67,14 +60,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\1\Match_Simulation\src" />
+      <recent name="C:\1\Match_Simulation\src\main\java" />
+      <recent name="C:\1\Match_Simulation\src\main\java\io" />
       <recent name="C:\repositoryProjectPO\MatchSimulation\src" />
       <recent name="C:\repositoryProjectPO\MatchSimulation\src\main\java" />
-      <recent name="C:\repositoryProjectPO\MatchSimulation\src\main" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
+      <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="MatchSimulation.main" />
       <method v="2">
         <option name="Make" enabled="true" />

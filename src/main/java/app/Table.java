@@ -1,3 +1,5 @@
+package app;
+
 public class Table {
     private Team[] sortingTeams;
     public Table(Team[] dataBaseTeams ){

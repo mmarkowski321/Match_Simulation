@@ -1,4 +1,6 @@
+package app;
 
+import io.GetNumber;
 
 import java.util.HashSet;
 import java.util.Random;
