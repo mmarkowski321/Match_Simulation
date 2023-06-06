@@ -14,17 +14,16 @@ public class RunMatch {
             while (homeTeam==awayTeam){
                 awayTeam=generator.nextInt(5);
             }
-            SoccerMatch soccerMatch = new SoccerMatch(teamsDataBase[homeTeam],teamsDataBase[awayTeam]);
-            soccerMatch.simulate(true);
-            soccerMatch.getWinner();
+            Match match = new Match(teamsDataBase[homeTeam],teamsDataBase[awayTeam]);
+            match.simulate(true);
+            match.getWinner();
         }
         else{
             int[] numbers = getNumber.getNumberOfChosenTeams();
 
-            SoccerMatch soccerMatch = new SoccerMatch(teamsDataBase[numbers[1]-1],teamsDataBase[numbers[0]-1]);
-            soccerMatch.simulate(true);
-            soccerMatch.getWinner();
+            Match match = new Match(teamsDataBase[numbers[1]-1],teamsDataBase[numbers[0]-1]);
+            match.simulate(true);
+            match.getWinner();
         }
-
     }
 }

@@ -1,8 +1,5 @@
 package app;
 
-import java.util.Random;
-
-import static java.lang.Math.round;
 
 public class SoccerMatch {
     final Team homeTeam;
@@ -10,17 +7,13 @@ public class SoccerMatch {
     private int homeGoals;
     private int awayGoals;
     private boolean isFinished;
-    private int defense;
-    private int goalkeeperHome;
-    private int goalkeeperAway;
+
+    private double homeScoreChance;
+    private double awayScoreChance;
+
     public SoccerMatch(Team awayTeam, Team homeTeam) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
-        this.homeGoals = 0;
-        this.awayGoals = 0;
-        this.isFinished = false;
-        this.goalkeeperAway = awayTeam.gkAccurity;
-        this.goalkeeperHome = homeTeam.gkAccurity;
     }
 
     public void simulate(boolean ifPlayer) {
@@ -33,72 +26,14 @@ public class SoccerMatch {
         double homeTactics = homeTeam.getTactics();
         double awayTactics = awayTeam.getTactics();
 
-        Random random = new Random();
-        Shots shots = new Shots();
+
         if(ifPlayer) System.out.println("Zaczyna sie mecz: " + homeTeam.getName() + " vs " + awayTeam.getName());
-        double homeScoreChance = ((homeAttackStrength + homeForm + homeTactics) / (awayDefenceStrength + awayForm ));
-        double awayScoreChance = ((awayAttackStrength + awayForm + awayTactics) / (homeDefenceStrength + homeForm ));
+        homeScoreChance = ((homeAttackStrength + homeForm + homeTactics) / (awayDefenceStrength + awayForm ));
+        awayScoreChance = ((awayAttackStrength + awayForm + awayTactics) / (homeDefenceStrength + homeForm ));
         if (ifPlayer) {
             System.out.printf("Szanse na sytuacje podbramkowe dla %s %.2f%% w kazdej minucie\n",homeTeam.getName(),homeScoreChance*100/40);
             System.out.printf("Szanse na sytuacje podbramkowe dla %s %.2f%% w kazdej minucie\n",awayTeam.getName(),awayScoreChance*100/40);
         }
-
-        for (int minute = 1; minute <= 90; minute+=1) {
-            //MY GRAMY
-            if (ifPlayer) {
-
-                if (random.nextDouble(40)  < homeScoreChance) {
-                    System.out.println(minute + " minuta. Szansa na gola dla naszej drużyny!");
-                    shots.goalPicture();
-                    if (shots.czyGol(awayTeam.wypelnijObrone(),true,true)) {
-                        homeGoals++;
-
-                        System.out.println(minute + "': " + homeTeam.getName() + " scores! " +
-                                homeTeam.getName() + " " + homeGoals + " - " + awayTeam.getName() + " " + awayGoals);
-                    }
-                }
-                else if (random.nextDouble(40) < awayScoreChance) {
-                    System.out.println(minute + " minuta. Szansa na gola dla przeciwnej drużyny!");
-                    if (shots.czyGol(homeTeam.wypelnijObrone(),true,false)) {
-                        awayGoals++;
-                        System.out.println(minute + "': " + awayTeam.getName() + " zdobywa gola! " +
-                                homeTeam.getName() + " " + homeGoals + " - " + awayTeam.getName() + " " + awayGoals);
-                    }
-                }
-
-                //GRAJA BOTY
-            } else {
-                if (random.nextDouble(40)  < homeScoreChance) {
-
-                    //                shots.czyGol(awayTeam.goalkeeper.wypelnijObrone(goalkeeper.defence));
-                    if (shots.czyGol(homeTeam.wypelnijObrone(),false,false)) {
-                        homeGoals++;
-                    }
-                }
-                if (random.nextDouble(40)  < awayScoreChance) {
-                    if (shots.czyGol(awayTeam.wypelnijObrone(),false,false)) {
-                        awayGoals++;
-                    }
-                }
-
-            }
-        }
-        System.out.println("Wyniki meczu: " + homeTeam.getName() + " " + homeGoals + " - " +
-                awayTeam.getName() + " " + awayGoals);
-
-        isFinished = true;
-        //Aktualizowanie statystyk trafionych i straconych bramek dla pierwszej drużyny
-        homeTeam.setGoalsScored(homeTeam.getGoalsScored()+homeGoals);
-        homeTeam.setGoalsLosed(homeTeam.getGoalsLosed()+awayGoals);
-        //Aktualizowanie statystyk trafionych i straconych bramek dla drugiej drużyny
-        awayTeam.setGoalsScored(awayTeam.getGoalsScored()+awayGoals);
-        awayTeam.setGoalsLosed(awayTeam.getGoalsLosed()+homeGoals);
-        homeTeam.setGames(homeTeam.getGames()+1);
-        awayTeam.setGames(awayTeam.getGames()+1);
-    }
-
-    public boolean isFinished() {
-        return isFinished;
     }
 
     public String getWinner() {
@@ -127,5 +62,31 @@ public class SoccerMatch {
             homeTeam.setPoints(homeTeam.getPoints()+1);
             return "Remis";
         }
+    }
+
+    public int getHomeGoals() {
+        return homeGoals;
+    }
+
+    public void setHomeGoals(int homeGoals) {
+        this.homeGoals = homeGoals;
+    }
+
+    public int getAwayGoals() {
+        return awayGoals;
+    }
+
+    public void setAwayGoals(int awayGoals) {
+        this.awayGoals = awayGoals;
+    }
+
+    public double getHomeScoreChance() {
+        return homeScoreChance;
+    }
+    public double getAwayScoreChance() {
+        return awayScoreChance;
+    }
+    public void setFinished(boolean finished) {
+        isFinished = finished;
     }
 }

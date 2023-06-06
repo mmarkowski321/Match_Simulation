@@ -4,21 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="Adding folders">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/GetTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/RunMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Shots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Shots.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SoccerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
+    </list>
+    <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Shots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Shots.java" afterDir="false" />
+    </list>
+    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/app/RunLigue.java">
+      <ranges>
+        <range start1="23" end1="24" start2="23" end2="24" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="25" end1="27" start2="25" end2="27" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="28" end1="30" start2="28" end2="30" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="33" end1="34" start2="33" end2="34" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="35" end1="37" start2="35" end2="37" changelist="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" />
+        <range start1="38" end1="40" start2="38" end2="40" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="47" end1="49" start2="47" end2="47" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+      </ranges>
+    </file>
+  </component>
   <component name="ProjectId" id="2QIv5mTJLshzSBI6VjOtf9EITN6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -51,6 +64,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TODO_SCOPE": "All Places",
     "last_opened_file_path": "C:/IO_Stream/lab-5-strumienie",
     "onboarding.tips.debug.path": "C:/repositoryProjectPO/MatchSimulation/src/main/java/org/example/Main.java",
     "project.structure.last.edited": "Modules",
@@ -90,7 +104,19 @@
       <option name="presentableId" value="Default" />
       <updated>1685053731058</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adding folders">
+      <created>1685913227164</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685913227164</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adding folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding folders" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

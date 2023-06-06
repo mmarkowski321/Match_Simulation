@@ -1,8 +1,7 @@
 package app;
 
-import java.util.ArrayList;
+
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Random;
 
 public class Team {
@@ -71,13 +70,6 @@ public class Team {
         }
         return defensePoints;
     }
-    public void wyswietlObrone(HashSet<Integer> defensePoints){
-        Iterator itr = defensePoints.iterator();
-        while (itr.hasNext()) {
-            System.out.printf("%d ",itr.next());
-        }
-        System.out.printf("\n");
-    }
 
     public void setName(String name) {
         this.name = name;
@@ -143,13 +135,5 @@ public class Team {
         this.games = games;
     }
 
-    public HashSet wypelnijObrone(int defence){
-        HashSet defencePoints=new HashSet();
-        Random generator = new Random();
-        for(int i=0;defencePoints.size()<defence;i++){
-            defencePoints.add(generator.nextInt(18));
 
-        }
-        return defencePoints;
-    }
 }
