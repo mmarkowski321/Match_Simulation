@@ -1,6 +1,6 @@
 package io;
 
-import io.GetNumber;
+
 import app.Team;
 import java.io.BufferedReader;
 import java.io.File;

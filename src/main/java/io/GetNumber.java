@@ -42,16 +42,7 @@ public class GetNumber {
         }
     }
 
-    public int getEndNumber() {
-        System.out.printf("Czy chcesz zagrac jeszcze w inny tryb?");
-        int shot = this.scan.nextInt();
-        if (shot <= 1 && shot >= 0) {
-            return shot;
-        } else {
-            System.out.println("Liczba poza zakresem, sproboj wpisac inna");
-            return this.getNumberWhereToShot();
-        }
-    }
+
 
     public int getNumberWhereToShot() {
         System.out.println("Wyceluj w bramke podajac odpowiednia liczbe: ");

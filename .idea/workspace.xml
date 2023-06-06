@@ -4,19 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="Adding folders">
-      <change afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
+    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="New class Match and changes in simulate method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" afterDir="false" />
     </list>
-    <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="">
+    <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="Changes by komputer">
       <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Shots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Shots.java" afterDir="false" />
     </list>
-    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="">
+    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="Changes by Mateusz and Dominik">
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
     </list>
@@ -41,15 +39,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/app/RunLigue.java">
+    <file path="$PROJECT_DIR$/src/main/java/app/Menu.java">
       <ranges>
-        <range start1="23" end1="24" start2="23" end2="24" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="25" end1="27" start2="25" end2="27" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="28" end1="30" start2="28" end2="30" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="33" end1="34" start2="33" end2="34" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="35" end1="37" start2="35" end2="37" changelist="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" />
-        <range start1="38" end1="40" start2="38" end2="40" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="47" end1="49" start2="47" end2="47" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="2" end1="4" start2="2" end2="2" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="10" end1="11" start2="8" end2="9" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
       </ranges>
     </file>
   </component>
@@ -59,19 +52,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TODO_SCOPE": "All Places",
-    "last_opened_file_path": "C:/IO_Stream/lab-5-strumienie",
-    "onboarding.tips.debug.path": "C:/repositoryProjectPO/MatchSimulation/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TODO_SCOPE&quot;: &quot;All Places&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/IO_Stream/lab-5-strumienie&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/repositoryProjectPO/MatchSimulation/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\1\Match_Simulation\src" />
@@ -111,12 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1685913227164</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New class Match and changes in simulate method">
+      <created>1686048424117</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686048424117</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding folders" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding folders" />
+    <MESSAGE value="New class Match and changes in simulate method" />
+    <MESSAGE value="Changes by Mateusz and Dominik" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes by Mateusz and Dominik" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -14,7 +14,6 @@ public class Match extends SoccerMatch{
         Random random = new Random();
         Shots shots = new Shots();
         for (int minute = 1; minute <= 90; minute+=1) {
-
             if (ifPlayer) {
                 //MY GRAMY
                 ourTeamPlay(random,shots,awayTeam,homeTeam,minute);
