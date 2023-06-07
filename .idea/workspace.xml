@@ -6,18 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="New class Match and changes in simulate method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" afterDir="false" />
     </list>
-    <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="Changes by komputer">
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Shots.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Shots.java" afterDir="false" />
-    </list>
-    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="Changes by Mateusz and Dominik">
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
-    </list>
+    <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="Changes by komputer" />
+    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="Changes by Mateusz and Dominik" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,14 +28,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/app/Menu.java">
-      <ranges>
-        <range start1="2" end1="4" start2="2" end2="2" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="10" end1="11" start2="8" end2="9" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="2QIv5mTJLshzSBI6VjOtf9EITN6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -78,6 +61,17 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="MatchSimulation.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

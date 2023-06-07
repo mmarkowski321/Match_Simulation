@@ -33,8 +33,8 @@ public class RunLigue {
                 else {
                     Match match = new Match(teamsDataBase[team1], teamsDataBase[team2]);
                     if (teamsDataBase[team1].ifPlayer || teamsDataBase[team2].ifPlayer) {
-                        soccerMatch.simulate(true);
-                        soccerMatch.getWinner();
+                        match.simulate(true);
+                        match.getWinner();
                     } else {
                         match.simulate(false);
                         match.getWinner();
