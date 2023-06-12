@@ -24,7 +24,7 @@ public class GetTeams {
         int tactics = getNumber.getNumberOfSkill();
         System.out.println("Umiejętności bramkarza: ");
         int gkAccurity = getNumber.getGoalkeeperSkill();
-        Team myTeam = new Team(name,attackStrength,defensePoints,form,tactics,gkAccurity,true);
+        Team myTeam = new Team(name,attackStrength,defensePoints,form,tactics,gkAccurity);
         return myTeam;
     }
 
@@ -50,8 +50,8 @@ public class GetTeams {
                 int value3 = Integer.parseInt(values[3].trim());
                 int value4 = Integer.parseInt(values[4].trim());
                 int value5 = Integer.parseInt(values[5].trim());
-                boolean value6 = Boolean.parseBoolean(values[6].trim());
-                Team team = new Team(teamName,value1,value2,value3,value4,value5,value6);
+
+                Team team = new Team(teamName,value1,value2,value3,value4,value5);
                 dataTeams[i] = team;
                 i++;
             }
@@ -91,7 +91,7 @@ public class GetTeams {
                 int value4 = Integer.parseInt(values[4].trim());
                 int value5 = Integer.parseInt(values[5].trim());
                 boolean value6 = Boolean.parseBoolean(values[6].trim());
-                Team team = new Team(teamName,value1,value2,value3,value4,value5,value6);
+                Team team = new Team(teamName,value1,value2,value3,value4,value5);
                 dataTeams[i] = team;
                 i++;
             }

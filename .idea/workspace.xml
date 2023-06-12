@@ -5,10 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="New class Match and changes in simulate method">
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/ILeague.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/IMatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Shots.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" afterDir="false" />
+    </list>
+    <list id="a267148d-dee3-4690-a153-2298a4f15edf" name="Changes by gas" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" afterDir="false" />
     </list>
     <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="Changes by komputer" />
-    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="Changes by Mateusz and Dominik" />
+    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="Changes by Mateusz and Dominik">
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,11 +42,40 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/app/RunMatch.java">
+      <ranges>
+        <range start1="16" end1="19" start2="16" end2="19" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="22" end1="26" start2="22" end2="25" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/app/Team.java">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="5" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="19" end1="20" start2="20" end2="20" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="22" end1="23" start2="22" end2="23" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="35" end1="36" start2="35" end2="35" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="38" end1="38" start2="37" end2="49" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="63" end1="64" start2="74" end2="75" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/app/RunLigue.java">
+      <ranges>
+        <range start1="4" end1="5" start2="4" end2="7" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
+        <range start1="6" end1="8" start2="8" end2="11" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
+        <range start1="10" end1="10" start2="13" end2="34" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
+        <range start1="23" end1="31" start2="47" end2="48" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="33" end1="41" start2="50" end2="51" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="47" end1="47" start2="57" end2="69" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="2QIv5mTJLshzSBI6VjOtf9EITN6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -61,17 +109,6 @@
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="app.Main" />
       <module name="MatchSimulation.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <option name="filePath" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

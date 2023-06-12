@@ -21,28 +21,26 @@ public class RunLigue {
                 int team2 = (n - 1 - j + i) % (n - 1);
                 if (j == 0) {
                     team2 = n - 1;
-                    Match match = new Match(teamsDataBase[team1], teamsDataBase[team2]);
-                    if (teamsDataBase[team1].ifPlayer || teamsDataBase[team2].ifPlayer) {
-                        match.simulate(true);
-                        match.getWinner();
-                    } else {
-                        match.simulate(false);
-                        match.getWinner();
-                    }
+                    startMatch(teamsDataBase[team1],teamsDataBase[team2],myTeam);
                 }
                 else {
-                    Match match = new Match(teamsDataBase[team1], teamsDataBase[team2]);
-                    if (teamsDataBase[team1].ifPlayer || teamsDataBase[team2].ifPlayer) {
-                        match.simulate(true);
-                        match.getWinner();
-                    } else {
-                        match.simulate(false);
-                        match.getWinner();
-                    }
+                    startMatch(teamsDataBase[team1],teamsDataBase[team2],myTeam);
                 }
             }
         }
         Table table = new Table(teamsDataBase);
         table.printTable();
+    }
+    public void startMatch(Team team1, Team team2, Team myTeam){
+        if (team1.equals(myTeam) || team2.equals(myTeam)) {
+            PlayerMatch playerMatch = new PlayerMatch(team1,team2);
+            playerMatch.simulate();
+            playerMatch.getWinner();
+        } else {
+            BotsMatch botsMatch = new BotsMatch(team1,team2);
+            botsMatch.simulate();
+            botsMatch.getWinner();
+        }
+
     }
 }

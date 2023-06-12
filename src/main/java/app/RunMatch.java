@@ -14,9 +14,9 @@ public class RunMatch {
             while (homeTeam==awayTeam){
                 awayTeam=generator.nextInt(5);
             }
-            Match match = new Match(teamsDataBase[homeTeam],teamsDataBase[awayTeam]);
-            match.simulate(true);
-            match.getWinner();
+            PlayerMatch playerMatch = new PlayerMatch(teamsDataBase[homeTeam],teamsDataBase[awayTeam]);
+            playerMatch.simulate();
+            playerMatch.getWinner();
         }
         else{
             int[] numbers = getNumber.getNumberOfChosenTeams();

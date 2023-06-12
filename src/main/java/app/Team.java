@@ -2,6 +2,7 @@ package app;
 
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Random;
 
 public class Team {
@@ -17,10 +18,9 @@ public class Team {
     private int goalsLosed;
     private int draw;
     private int points;
-    public boolean ifPlayer;
     private int games;
 
-    public Team(String name, int attackStrength, int defenceStrength, int form, int tactics,int gkAccurity, boolean ifPlayer) {
+    public Team(String name, int attackStrength, int defenceStrength, int form, int tactics,int gkAccurity) {
         this.name = name;
         this.attackStrength = attackStrength;
         this.defenceStrength = defenceStrength;
@@ -33,8 +33,19 @@ public class Team {
         this.goalsLosed = 0;
         this.draw = 0;
         this.points = 0;
-        this.ifPlayer = ifPlayer;
         this.games=0;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Team team)) return false;
+        return attackStrength == team.attackStrength && defenceStrength == team.defenceStrength && form == team.form && tactics == team.tactics && gkAccurity == team.gkAccurity && Objects.equals(name, team.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, attackStrength, defenceStrength, form, tactics, gkAccurity);
     }
 
     public String getName() {
