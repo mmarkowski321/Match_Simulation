@@ -37,12 +37,12 @@ public class BotsMatch extends Match implements IMatch{
     }
     private void botTeamsPlay(Random random, Team awayTeam, Team homeTeam){
         if (random.nextDouble(40)  < homeScoreChance) {
-            if (czyGol(homeTeam.completeDefense(),false,false)) {
+            if (ifGoal(homeTeam.completeDefense(),false,false)) {
                 setHomeGoals(getHomeGoals() + 1);
             }
         }
         if (random.nextDouble(40)  < awayScoreChance) {
-            if (czyGol(awayTeam.completeDefense(),false,false)) {
+            if (ifGoal(awayTeam.completeDefense(),false,false)) {
                 setAwayGoals(getAwayGoals() + 1);
             }
         }

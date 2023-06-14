@@ -6,27 +6,24 @@ import io.GetTeams;
 public class Menu {
     GetNumber getNumber = new GetNumber();
     public int choice;
-    public void displayManu(){
+    public void displayMenu(){
         GetTeams getTeams = new GetTeams();
-
+        RunLigue runLigue = new RunLigue(getTeams.dataBaseTeams());
         do {
             choice = getNumber.getMenuNumber();
 
             switch (choice) {
                 case 1:
                     System.out.println("Wybrano opcję 1");
-                    RunLigue runLigue = new RunLigue();
                     runLigue.roundRobin();
                     break;
                 case 2:
                     System.out.println("Wybrano opcję 2");
-                    RunMatch runMatch = new RunMatch();
-                    runMatch.runMatch(false, getTeams.dataBaseTeams());
+                    runLigue.runSingleMatch(false, runLigue);
                     break;
                 case 3:
                     System.out.println("Wybrano opcję 3");
-                    RunMatch runMatch1 = new RunMatch();
-                    runMatch1.runMatch(true, getTeams.dataBaseTeams());
+                    runLigue.runSingleMatch(true, runLigue);
                     break;
                 case 4:
                     System.out.println("Wyjście z programu");

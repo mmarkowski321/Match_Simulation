@@ -2,10 +2,11 @@ package app;
 
 import io.GetTeams;
 
-public class RunLigue {
+public class RunLigue implements ILeague {
+    public Team[] teamsDataBase;
 
-
-    public RunLigue() {
+    public RunLigue(Team[] teamsDataBase) {
+        this.teamsDataBase = teamsDataBase;
     }
 
     public void roundRobin() {
@@ -28,8 +29,7 @@ public class RunLigue {
                 }
             }
         }
-        Table table = new Table(teamsDataBase);
-        table.printTable();
+        table(teamsDataBase);
     }
     public void startMatch(Team team1, Team team2, Team myTeam){
         if (team1.equals(myTeam) || team2.equals(myTeam)) {

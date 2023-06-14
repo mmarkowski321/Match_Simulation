@@ -72,7 +72,7 @@ public class Team {
         return games;
     }
 
-    public HashSet<Integer> wypelnijObrone(){
+    public HashSet<Integer> completeDefense(){
         HashSet<Integer> defensePoints=new HashSet<>();
         Random generator = new Random();
         int i = 0;

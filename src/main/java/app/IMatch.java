@@ -8,7 +8,7 @@ import java.util.Random;
 public interface IMatch {
     void simulate();
 
-    default  boolean czyGol(HashSet<Integer> defencePoints, boolean ifPlayer, boolean playerIsShooting){
+    default  boolean ifGoal(HashSet<Integer> defencePoints, boolean ifPlayer, boolean playerIsShooting){
         GetNumber getNumberWhereToShot = new GetNumber();
         if (ifPlayer && playerIsShooting) {
 

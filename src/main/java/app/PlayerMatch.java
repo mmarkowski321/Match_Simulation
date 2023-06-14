@@ -39,7 +39,7 @@ public class PlayerMatch extends Match implements IMatch{
         if (random.nextDouble(40) < homeScoreChance) {
             System.out.println(minute + " minuta. Szansa na gola dla naszej drużyny!");
             goalPicture();
-            if (czyGol(awayTeam.completeDefense(), true, true)) {
+            if (ifGoal(awayTeam.completeDefense(), true, true)) {
                 setHomeGoals(getHomeGoals() + 1);
 
                 System.out.println(minute + "': " + homeTeam.getName() + " zdobywa gola! " +
@@ -47,7 +47,7 @@ public class PlayerMatch extends Match implements IMatch{
             }
         } else if (random.nextDouble(40) < awayScoreChance) {
             System.out.println(minute + " minuta. Szansa na gola dla przeciwnej drużyny!");
-            if (czyGol(homeTeam.completeDefense(), true, false)) {
+            if (ifGoal(homeTeam.completeDefense(), true, false)) {
                 setAwayGoals(getAwayGoals() + 1);
                 System.out.println(minute + "': " + awayTeam.getName() + " zdobywa gola! " +
                         homeTeam.getName() + " " + getHomeGoals() + " - " + awayTeam.getName() + " " + getAwayGoals());

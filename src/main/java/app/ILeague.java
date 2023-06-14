@@ -5,7 +5,8 @@ import io.GetNumber;
 import java.util.Random;
 
 public interface ILeague {
-    default void runSingleMatch(boolean czyLosowy, Team[] teamsDataBase){
+    default void runSingleMatch(boolean czyLosowy, RunLigue runLigue){
+        Team[] teamsDataBase = runLigue.teamsDataBase;
         GetNumber getNumber = new GetNumber();
         if(czyLosowy){
             Random generator = new Random();
@@ -26,9 +27,8 @@ public interface ILeague {
             playerMatch.getWinner();
         }
     }
-    default void table(RunLigue runLigue){
-        Team[] sortingTeams = runLigue.teamsDataBase;
-        int k = 0;
+    default void table(Team[] teamsDataBase){
+        Team[] sortingTeams = teamsDataBase;
         for (int j = 0; j < sortingTeams.length - 1; j++) {
             for (int i = 0; i < sortingTeams.length - 1; i++) {
                 if (sortingTeams[i].getPoints() < sortingTeams[i + 1].getPoints()) {
