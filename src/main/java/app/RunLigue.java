@@ -14,14 +14,14 @@ public class RunLigue implements ILeague {
         Team myTeam = getTeam.makeTeam();
 
         Team[] teamsDataBase = getTeam.dataBaseTeams(myTeam);
-        int n = teamsDataBase.length;
-        for (int i = 0; i < n - 1; i++) {
-            System.out.println("Round " + (i + 1));
-            for (int j = 0; j < n / 2; j++) {
-                int team1 = (i + j) % (n - 1);
-                int team2 = (n - 1 - j + i) % (n - 1);
-                if (j == 0) {
-                    team2 = n - 1;
+        int numberOfTeams = teamsDataBase.length;
+        for (int index1 = 0; index1 < numberOfTeams - 1; index1++) {
+            System.out.println("Round " + (index1 + 1));
+            for (int index2 = 0; index2 < numberOfTeams / 2; index2++) {
+                int team1 = (index1 + index2) % (numberOfTeams - 1);
+                int team2 = (numberOfTeams - 1 - index2 + index1) % (numberOfTeams - 1);
+                if (index2 == 0) {
+                    team2 = numberOfTeams - 1;
                     startMatch(teamsDataBase[team1],teamsDataBase[team2],myTeam);
                 }
                 else {

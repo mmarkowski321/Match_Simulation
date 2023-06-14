@@ -1,5 +1,6 @@
 package io;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class GetNumber {
@@ -82,4 +83,45 @@ public class GetNumber {
             return this.getGoalkeeperSkill();
         }
     }
+    public void getCommand(boolean czyGol) {
+        String[] goalCommand = {
+                "I to jest to, czego od niego oczekiwaliśmy! Fantastyczne wykonanie akcji i piękne trafienie. To będzie zapamiętane jako jedno z najlepszych goli sezonu!",
+                "Wow, to było absolutnie nie do obrony! Kompletnie zaskoczył bramkarza i wpakował piłkę do siatki. Doskonała technika i precyzja.",
+                "Co za moment! Zawodnik pokazał klasę, zachowując spokój i pewność siebie. To jest piłka nożna w najwyższej jakości.",
+                "Piękne wykonanie akcji i perfekcyjny strzał! Chyba trudno o lepszy sposób na otwarcie wyniku w tym meczu. To naprawdę ważna bramka dla drużyny.",
+                "Niesamowite! Bramkarz był bez szans! Zawodnik pokazał nie tylko technikę, ale także inteligencję taktyczną. To był prawdziwy gol dla kolekcji.",
+                "Doskonale umieścił piłkę w siatce! Zawodnik pokazał, dlaczego jest jednym z najlepszych strzelców w lidze.",
+                "To było jak z kosmosu! Piłka leciała jak pocisk i lądowała dokładnie w bramce. To jest mistrzowski strzał!",
+                "Nie ma lepszego sposobu na zdobycie bramki! Precyzja, siła i determinacja - wszystko to było obecne w tym uderzeniu.",
+                "Bramkarz był bezradny! To jest strzał, o którym będziemy mówić przez długi czas. Wspaniałe wykonanie!",
+                "Co za wyczyn! To nie jest łatwe, ale on sprawił, że wyglądało jak dziecinnie proste. To jest klasa światowa!",
+                "Bramkarz był w szoku! Strzał zaskoczył go całkowicie. Tego nie da się obronić!"
+        };
+
+        String[] noGoalCommand = {
+                "Niestety, nie udało mu się. To był moment, w którym musiał być precyzyjny, ale piłka minęła bramkę o centymetry.",
+                "Zawodnik z pewnością będzie miał koszmary po tej sytuacji. Strzał był dobrze wymierzony, ale niestety nie trafił do siatki.",
+                "Trochę pecha w tym uderzeniu. Napastnik miał wszystko dobrze poukładane, ale bramkarz zdołał skutecznie sparować piłkę.",
+                "Za chwilę wyrósłby bohater, ale niestety piłka przeleciała tuż obok słupka. Trudno uwierzyć w to niepowodzenie.",
+                "Mogło być tak pięknie, ale to nietrafienie z pewnością zostanie zapamiętane. Cóż, czasami futbol jest nieprzewidywalny.",
+                "Napastnik był bardzo blisko! Bramkarz zdołał jednak wybronić strzał. To był moment, który mógł zmienić losy meczu.",
+                "Zdecydowanie brakowało precyzji w tym strzale. To musi być dla zawodnika duże rozczarowanie.",
+                "Piłka poszybowała nad poprzeczką. Nie udało się w tej sytuacji, ale napastnik nie powinien się poddawać.",
+                "Nietrafienie jest trudne do przyjęcia, zwłaszcza w takiej sytuacji. Zawodnik na pewno będzie chciał odkupić ten błąd.",
+                "Napastnik był niebezpieczny, ale niestety piłka przeszła obok słupka. To musi być bolesne dla drużyny."
+        };
+
+        Random random = new Random();
+
+        if (czyGol) {
+            int index = random.nextInt(goalCommand.length);
+            System.out.println(goalCommand[index]);
+            System.out.println();
+        } else {
+            int index = random.nextInt(noGoalCommand.length);
+            System.out.println(noGoalCommand[index]);
+            System.out.println();
+        }
+    }
+
 }
