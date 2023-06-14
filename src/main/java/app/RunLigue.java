@@ -35,12 +35,13 @@ public class RunLigue {
         if (team1.equals(myTeam) || team2.equals(myTeam)) {
             PlayerMatch playerMatch = new PlayerMatch(team1,team2);
             playerMatch.simulate();
+            playerMatch.updateStatistics();
             playerMatch.getWinner();
         } else {
             BotsMatch botsMatch = new BotsMatch(team1,team2);
             botsMatch.simulate();
+            botsMatch.updateStatistics();
             botsMatch.getWinner();
         }
-
     }
 }

@@ -23,11 +23,8 @@ public class PlayerMatch extends Match implements IMatch{
 
     @Override
     public void simulate() {
-
         Random random = new Random();
-
-//        homeScoreChance = ((homeAttackStrength + homeForm + homeTactics) / (awayDefenceStrength + awayForm ));
-//        awayScoreChance = ((awayAttackStrength + awayForm + awayTactics) / (homeDefenceStrength + homeForm ));
+        System.out.println("Zaczyna sie mecz: " + homeTeam.getName() + " vs " + awayTeam.getName());
         for (int minute = 1; minute <= 90; minute+=1){
             ourTeamPlay(random,awayTeam,homeTeam,minute);
         }
@@ -39,7 +36,6 @@ public class PlayerMatch extends Match implements IMatch{
     }
 
     private void ourTeamPlay (Random random, Team awayTeam, Team homeTeam, int minute){
-        //BYLO WCZESNIEJ gethomeScoreChance()
         if (random.nextDouble(40) < homeScoreChance) {
             System.out.println(minute + " minuta. Szansa na gola dla naszej drużyny!");
             goalPicture();
@@ -56,34 +52,6 @@ public class PlayerMatch extends Match implements IMatch{
                 System.out.println(minute + "': " + awayTeam.getName() + " zdobywa gola! " +
                         homeTeam.getName() + " " + getHomeGoals() + " - " + awayTeam.getName() + " " + getAwayGoals());
             }
-        }
-    }
-
-    @Override
-    public String getWinner() {
-        if (!isFinished()){
-            return null;
-        }
-        if (getHomeGoals() > getAwayGoals()){
-            homeTeam.setWins(homeTeam.getWins()+1);
-            homeTeam.setPoints(homeTeam.getPoints()+3);
-            awayTeam.setLoses(awayTeam.getLoses()+1);
-            homeTeam.setForm(homeTeam.getForm()+10);
-            awayTeam.setForm(awayTeam.getForm()-10);
-            return homeTeam.getName();
-        } else if (getAwayGoals() > getHomeGoals()) {
-            awayTeam.setWins(awayTeam.getWins()+1);
-            awayTeam.setPoints(awayTeam.getPoints()+3);
-            homeTeam.setLoses(homeTeam.getLoses()+1);
-            homeTeam.setForm(homeTeam.getForm()-10);
-            awayTeam.setForm(awayTeam.getForm()+10);
-            return awayTeam.getName();
-        }else {
-            awayTeam.setDraw(awayTeam.getDraw()+1);
-            homeTeam.setDraw(homeTeam.getDraw()+1);
-            awayTeam.setPoints(awayTeam.getPoints()+1);
-            homeTeam.setPoints(homeTeam.getPoints()+1);
-            return "Remis";
         }
     }
 }

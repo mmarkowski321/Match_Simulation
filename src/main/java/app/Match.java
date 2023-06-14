@@ -43,49 +43,6 @@ abstract class Match {
         isFinished = finished;
     }
 
-//    public void goalPicture(){
-//        System.out.println("=====================");
-//        System.out.println("|| 1  2  3  4  5  6||");
-//        System.out.println("|| 7  8  9 10 11 12||");
-//        System.out.println("||13 14 15 16 17 18||");
-//
-//    }
-//    public static boolean czyGol(HashSet<Integer> defencePoints, boolean ifPlayer, boolean playerIsShooting){
-//        if (ifPlayer && playerIsShooting) {
-//            GetNumber getNumberWhereToShot = new GetNumber();
-//            int strzal = getNumberWhereToShot.getNumberWhereToShot();
-//            System.out.println(strzal);
-//            if (defencePoints.contains(strzal)) {
-//                System.out.println("Nie ma gola, bramkarz swietnie obronił");
-//                System.out.println();
-//                return false;
-//            } else {
-//                System.out.println("Gooool!!!");
-//                System.out.println();
-//                return true;
-//            }
-//        }
-//        else if (ifPlayer){
-//            Random random = new Random();
-//            int strzal = random.nextInt(18) + 1;
-//
-//            //        if (city.getName()!=null){name = city.getName();}else{name="N/A"}
-//
-//            if(defencePoints.contains(strzal)) {
-//                System.out.println("nie ma gola, bramkarz swietnie obronił \n");
-//                return false;
-//            }
-//            else{
-//                {System.out.println("gooool!!!\n");}
-//                return true;
-//            }
-//        }
-//        else{
-//            Random random = new Random();
-//            int strzal = random.nextInt(18) + 1;
-//            return !defencePoints.contains(strzal);
-//        }
-//    }
     public static void updatesAfterMatch(Team homeTeam, Team awayTeam, int homeGoals,int awayGoals){
         //Aktualizowanie statystyk trafionych i straconych bramek dla pierwszej drużyny
         homeTeam.setGoalsScored(homeTeam.getGoalsScored() + homeGoals);
@@ -96,5 +53,36 @@ abstract class Match {
         homeTeam.setGames(homeTeam.getGames() + 1);
         awayTeam.setGames(awayTeam.getGames() + 1);
     }
-
+    public String getWinner() {
+        if (!isFinished()){
+            return null;
+        }
+        if (getHomeGoals() > getAwayGoals()){
+            return homeTeam.getName();
+        } else if (getAwayGoals() > getHomeGoals()) {
+            return awayTeam.getName();
+        }else {
+            return "Remis";
+        }
+    }
+    public void updateStatistics(){
+        if (getHomeGoals() > getAwayGoals()){
+            homeTeam.setWins(homeTeam.getWins()+1);
+            homeTeam.setPoints(homeTeam.getPoints()+3);
+            awayTeam.setLoses(awayTeam.getLoses()+1);
+            if (homeTeam.getForm() < 90) homeTeam.setForm(homeTeam.getForm()+10);
+            if (awayTeam.getForm() > 10 ) awayTeam.setForm(awayTeam.getForm()-10);
+        } else if (getAwayGoals() > getHomeGoals()) {
+            awayTeam.setWins(awayTeam.getWins()+1);
+            awayTeam.setPoints(awayTeam.getPoints()+3);
+            homeTeam.setLoses(homeTeam.getLoses()+1);
+            if (awayTeam.getForm() < 90) awayTeam.setForm(awayTeam.getForm()+10);
+            if (homeTeam.getForm() > 10 ) homeTeam.setForm(homeTeam.getForm()-10);
+        }else {
+            awayTeam.setDraw(awayTeam.getDraw()+1);
+            homeTeam.setDraw(homeTeam.getDraw()+1);
+            awayTeam.setPoints(awayTeam.getPoints()+1);
+            homeTeam.setPoints(homeTeam.getPoints()+1);
+        }
+    }
 }

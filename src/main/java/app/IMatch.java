@@ -48,6 +48,6 @@ public interface IMatch {
         System.out.println("||13 14 15 16 17 18||");
 
     }
-    String getWinner();
+
 
 }
