@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="Adding interfaces and abstract class">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/IMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/IMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunMatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/SoccerMatch.java" afterDir="false" />
-    </list>
+    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="Removing some classes and making changes in code" />
     <list id="a267148d-dee3-4690-a153-2298a4f15edf" name="Changes by gas" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" afterDir="false" />
@@ -50,38 +41,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/app/BotsMatch.java">
-      <ranges>
-        <range start1="27" end1="35" start2="27" end2="27" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="36" end1="40" start2="28" end2="28" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="51" end1="52" start2="39" end2="40" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="56" end1="57" start2="44" end2="45" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="62" end1="89" start2="50" end2="51" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-      </ranges>
-    </file>
     <file path="$PROJECT_DIR$/src/main/java/app/RunLigue.java">
       <ranges>
         <range start1="4" end1="5" start2="4" end2="6" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
         <range start1="6" end1="8" start2="7" end2="9" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
         <range start1="15" end1="23" start2="16" end2="24" changelist="a267148d-dee3-4690-a153-2298a4f15edf" />
         <range start1="30" end1="32" start2="31" end2="32" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="37" end1="37" start2="37" end2="38" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="41" end1="41" start2="42" end2="43" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="43" end1="44" start2="45" end2="45" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/app/IMatch.java">
-      <ranges>
-        <range start1="10" end1="11" start2="10" end2="11" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="50" end1="51" start2="50" end2="51" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java">
-      <ranges>
-        <range start1="27" end1="30" start2="27" end2="27" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
-        <range start1="45" end1="46" start2="42" end2="43" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="53" end1="54" start2="50" end2="51" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="61" end1="88" start2="58" end2="85" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
       </ranges>
     </file>
   </component>
@@ -157,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686598471263</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Removing some classes and making changes in code">
+      <created>1686747675808</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686747675808</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -165,7 +137,8 @@
     <MESSAGE value="New class Match and changes in simulate method" />
     <MESSAGE value="Changes by Mateusz and Dominik" />
     <MESSAGE value="Adding interfaces and abstract class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding interfaces and abstract class" />
+    <MESSAGE value="Removing some classes and making changes in code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removing some classes and making changes in code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
