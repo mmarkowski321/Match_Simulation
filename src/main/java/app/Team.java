@@ -82,10 +82,6 @@ public class Team {
         return defensePoints;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getWins() {
         return wins;
     }
@@ -145,6 +141,5 @@ public class Team {
     public void setGames(int games) {
         this.games = games;
     }
-
 
 }

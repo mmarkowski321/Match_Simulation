@@ -1,52 +1,20 @@
 package app;
+import static com.diogonunes.jcolor.Ansi.colorize;
 
+import com.diogonunes.jcolor.Attribute;
 import io.GetNumber;
 
 import java.util.HashSet;
 import java.util.Random;
 
 public interface IMatch {
-    void simulate();
+    boolean ifGoal(HashSet<Integer> defencePoints, boolean ifPlayer, boolean playerIsShooting);
 
-    default  boolean ifGoal(HashSet<Integer> defencePoints, boolean ifPlayer, boolean playerIsShooting){
-        GetNumber getNumberWhereToShot = new GetNumber();
-        if (ifPlayer && playerIsShooting) {
-
-            int strzal = getNumberWhereToShot.getNumberWhereToShot();
-            System.out.println(strzal);
-            if (defencePoints.contains(strzal)) {
-                getNumberWhereToShot.getCommand(false);
-                return false;
-            } else {
-                getNumberWhereToShot.getCommand(true);
-                return true;
-            }
-        }
-        else if (ifPlayer){
-            Random random = new Random();
-            int strzal = random.nextInt(18) + 1;
-
-            if(defencePoints.contains(strzal)) {
-                getNumberWhereToShot.getCommand(false);
-                return false;
-            }
-            else{
-                getNumberWhereToShot.getCommand(true);
-                return true;
-            }
-        }
-        else{
-            Random random = new Random();
-            int strzal = random.nextInt(18) + 1;
-            return !defencePoints.contains(strzal);
-        }
-    }
     default void goalPicture(){
-        System.out.println("=====================");
-        System.out.println("|| 1  2  3  4  5  6||");
-        System.out.println("|| 7  8  9 10 11 12||");
-        System.out.println("||13 14 15 16 17 18||");
-
+        System.out.println(colorize("=====================", Attribute.TEXT_COLOR(90, 225, 22)));
+        System.out.println(colorize("||", Attribute.TEXT_COLOR(90, 225, 22)) + colorize(" 1  2  3  4  5  6",Attribute.TEXT_COLOR(218, 45, 45)) + colorize("||", Attribute.TEXT_COLOR(90, 225, 22)));
+        System.out.println(colorize("||", Attribute.TEXT_COLOR(90, 225, 22)) + colorize(" 7  8  9 10 11 12",Attribute.TEXT_COLOR(218, 45, 45)) + colorize("||", Attribute.TEXT_COLOR(90, 225, 22)));
+        System.out.println(colorize("||", Attribute.TEXT_COLOR(90, 225, 22)) + colorize("13 14 15 16 17 18",Attribute.TEXT_COLOR(218, 45, 45)) + colorize("||", Attribute.TEXT_COLOR(90, 225, 22)));
     }
 
 

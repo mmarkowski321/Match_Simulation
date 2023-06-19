@@ -12,12 +12,14 @@ abstract class Match {
     private int homeGoals;
     private int awayGoals;
     private boolean isFinished;
-
-
-
+    private final double homeScoreChance;
+    private final double awayScoreChance;
+    private final Random random = new Random();
     public Match(Team awayTeam, Team homeTeam) {
         this.homeTeam = homeTeam;
         this.awayTeam = awayTeam;
+        homeScoreChance =  ((double) (homeTeam.getAttackStrength() + homeTeam.getForm() + homeTeam.getTactics()) / (awayTeam.getDefenceStrength() + awayTeam.getForm()));
+        awayScoreChance = ((double) (awayTeam.getAttackStrength() + awayTeam.getForm() + awayTeam.getTactics()) / (homeTeam.getDefenceStrength() + homeTeam.getForm()));
     }
     public boolean isFinished() {
         return isFinished;
@@ -43,7 +45,18 @@ abstract class Match {
         isFinished = finished;
     }
 
-    public static void updatesAfterMatch(Team homeTeam, Team awayTeam, int homeGoals,int awayGoals){
+    public double getHomeScoreChance() {
+        return homeScoreChance;
+    }
+    public double getAwayScoreChance() {
+        return awayScoreChance;
+    }
+
+    public Random getRandom() {
+        return random;
+    }
+
+    protected static void updatesAfterMatch(Team homeTeam, Team awayTeam, int homeGoals, int awayGoals){
         //Aktualizowanie statystyk trafionych i straconych bramek dla pierwszej drużyny
         homeTeam.setGoalsScored(homeTeam.getGoalsScored() + homeGoals);
         homeTeam.setGoalsLosed(homeTeam.getGoalsLosed() + awayGoals);
@@ -53,7 +66,7 @@ abstract class Match {
         homeTeam.setGames(homeTeam.getGames() + 1);
         awayTeam.setGames(awayTeam.getGames() + 1);
     }
-    public String getWinner() {
+    protected String getWinner() {
         if (!isFinished()){
             return null;
         }
@@ -65,7 +78,7 @@ abstract class Match {
             return "Remis";
         }
     }
-    public void updateStatistics(){
+    protected void updateStatistics(){
         if (getHomeGoals() > getAwayGoals()){
             homeTeam.setWins(homeTeam.getWins()+1);
             homeTeam.setPoints(homeTeam.getPoints()+3);
@@ -85,4 +98,5 @@ abstract class Match {
             homeTeam.setPoints(homeTeam.getPoints()+1);
         }
     }
+    public abstract void simulate();
 }

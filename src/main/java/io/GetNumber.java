@@ -1,7 +1,11 @@
 package io;
 
+import com.diogonunes.jcolor.Attribute;
+
 import java.util.Random;
 import java.util.Scanner;
+
+import static com.diogonunes.jcolor.Ansi.colorize;
 
 public class GetNumber {
     Scanner scan;
@@ -83,7 +87,7 @@ public class GetNumber {
             return this.getGoalkeeperSkill();
         }
     }
-    public void getCommand(boolean czyGol) {
+    public void getCommand(boolean ifGoal) {
         String[] goalCommand = {
                 "I to jest to, czego od niego oczekiwaliśmy! Fantastyczne wykonanie akcji i piękne trafienie. To będzie zapamiętane jako jedno z najlepszych goli sezonu!",
                 "Wow, to było absolutnie nie do obrony! Kompletnie zaskoczył bramkarza i wpakował piłkę do siatki. Doskonała technika i precyzja.",
@@ -113,14 +117,12 @@ public class GetNumber {
 
         Random random = new Random();
 
-        if (czyGol) {
+        if (ifGoal) {
             int index = random.nextInt(goalCommand.length);
-            System.out.println(goalCommand[index]);
-            System.out.println();
+            System.out.println(colorize(goalCommand[index], Attribute.TEXT_COLOR(90, 225, 22)) + "\n");
         } else {
             int index = random.nextInt(noGoalCommand.length);
-            System.out.println(noGoalCommand[index]);
-            System.out.println();
+            System.out.println(colorize(noGoalCommand[index],Attribute.TEXT_COLOR(218, 45, 45)) + "\n");
         }
     }
 

@@ -1,42 +1,32 @@
 package app;
 
+import com.diogonunes.jcolor.Attribute;
+import io.GetNumber;
+
+import java.util.HashSet;
 import java.util.Random;
 
+import static com.diogonunes.jcolor.Ansi.colorize;
+
 public class PlayerMatch extends Match implements IMatch{
-    private double homeScoreChance;
-    private double awayScoreChance;
-    double homeAttackStrength = homeTeam.getAttackStrength();
-    double awayAttackStrength = awayTeam.getAttackStrength();
-    double homeDefenceStrength = homeTeam.getDefenceStrength();
-    double awayDefenceStrength = awayTeam.getDefenceStrength();
-    double homeForm = homeTeam.getForm();
-    double awayForm = awayTeam.getForm();
-    double homeTactics = homeTeam.getTactics();
-    double awayTactics = awayTeam.getTactics();
-
-
     public PlayerMatch(Team awayTeam, Team homeTeam){
         super(awayTeam,homeTeam);
-        this.homeScoreChance =  ((homeAttackStrength + homeForm + homeTactics) / (awayDefenceStrength + awayForm ));
-        this.awayScoreChance = ((awayAttackStrength + awayForm + awayTactics) / (homeDefenceStrength + homeForm ));
     }
-
     @Override
     public void simulate() {
-        Random random = new Random();
         System.out.println("Zaczyna sie mecz: " + homeTeam.getName() + " vs " + awayTeam.getName());
         for (int minute = 1; minute <= 90; minute+=1){
-            ourTeamPlay(random,awayTeam,homeTeam,minute);
+            ourTeamPlay(getRandom(),awayTeam,homeTeam,minute);
         }
-        System.out.println("Wyniki meczu: " + homeTeam.getName() + " " + getHomeGoals() + " - " +
-                awayTeam.getName() + " " + getAwayGoals());
+        System.out.println(colorize("Wyniki meczu: " + homeTeam.getName() + " " + getHomeGoals() + " - " +
+                awayTeam.getName() + " " + getAwayGoals(), Attribute.TEXT_COLOR(28, 145, 245)));
         setFinished(true);
 
         updatesAfterMatch(homeTeam,awayTeam,getHomeGoals(),getAwayGoals());
     }
 
     private void ourTeamPlay (Random random, Team awayTeam, Team homeTeam, int minute){
-        if (random.nextDouble(40) < homeScoreChance) {
+        if (random.nextDouble(40) < getHomeScoreChance()) {
             System.out.println(minute + " minuta. Szansa na gola dla naszej drużyny!");
             goalPicture();
             if (ifGoal(awayTeam.completeDefense(), true, true)) {
@@ -45,13 +35,47 @@ public class PlayerMatch extends Match implements IMatch{
                 System.out.println(minute + "': " + homeTeam.getName() + " zdobywa gola! " +
                         homeTeam.getName() + " " + getHomeGoals() + " - " + awayTeam.getName() + " " + getAwayGoals());
             }
-        } else if (random.nextDouble(40) < awayScoreChance) {
+        } else if (random.nextDouble(40) < getAwayScoreChance()) {
             System.out.println(minute + " minuta. Szansa na gola dla przeciwnej drużyny!");
             if (ifGoal(homeTeam.completeDefense(), true, false)) {
                 setAwayGoals(getAwayGoals() + 1);
                 System.out.println(minute + "': " + awayTeam.getName() + " zdobywa gola! " +
                         homeTeam.getName() + " " + getHomeGoals() + " - " + awayTeam.getName() + " " + getAwayGoals());
             }
+        }
+    }
+    @Override
+    public boolean ifGoal(HashSet<Integer> defencePoints, boolean ifPlayer, boolean playerIsShooting) {
+        GetNumber getNumberWhereToShot = new GetNumber();
+        if (ifPlayer && playerIsShooting) {
+
+            int strzal = getNumberWhereToShot.getNumberWhereToShot();
+            System.out.println(strzal);
+            if (defencePoints.contains(strzal)) {
+                getNumberWhereToShot.getCommand(false);
+                return false;
+            } else {
+                getNumberWhereToShot.getCommand(true);
+                return true;
+            }
+        }
+        else if (ifPlayer){
+            Random random = new Random();
+            int strzal = random.nextInt(18) + 1;
+
+            if(defencePoints.contains(strzal)) {
+                getNumberWhereToShot.getCommand(false);
+                return false;
+            }
+            else{
+                getNumberWhereToShot.getCommand(true);
+                return true;
+            }
+        }
+        else{
+            Random random = new Random();
+            int strzal = random.nextInt(18) + 1;
+            return !defencePoints.contains(strzal);
         }
     }
 }

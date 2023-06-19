@@ -4,21 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="Removing some classes and making changes in code" />
-    <list id="a267148d-dee3-4690-a153-2298a4f15edf" name="Changes by gas" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" afterDir="false" />
-    </list>
-    <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="Changes by komputer" />
-    <list id="73bc05a8-17ac-42c8-ad29-53887e47172b" name="Changes by Mateusz" comment="Changes by Mateusz and Dominik">
+    <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="Removing some classes and making changes in code">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/ILeague.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/ILeague.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/IMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/IMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" afterDir="false" />
     </list>
+    <list id="a267148d-dee3-4690-a153-2298a4f15edf" name="Changes by gas" comment="Changes by gas" />
+    <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="Changes by komputer" />
+    <list id="dfd125d5-a259-4c98-be45-c60b49e71a24" name="Changes by Mateusz" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,26 +30,37 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MatchSimulation" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/app/RunLigue.java">
-      <ranges>
-        <range start1="4" end1="5" start2="4" end2="6" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="6" end1="8" start2="7" end2="9" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-        <range start1="15" end1="23" start2="16" end2="24" changelist="a267148d-dee3-4690-a153-2298a4f15edf" />
-        <range start1="30" end1="32" start2="31" end2="32" changelist="73bc05a8-17ac-42c8-ad29-53887e47172b" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="2QIv5mTJLshzSBI6VjOtf9EITN6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -129,14 +141,36 @@
       <option name="project" value="LOCAL" />
       <updated>1686747675808</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changes by Mateusz and Dominik">
+      <created>1686747741485</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686747741485</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Changes by gas">
+      <created>1686747893406</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686747893406</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Removing some classes and making changes in code">
+      <created>1686747912010</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686747912010</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding folders" />
     <MESSAGE value="New class Match and changes in simulate method" />
-    <MESSAGE value="Changes by Mateusz and Dominik" />
     <MESSAGE value="Adding interfaces and abstract class" />
+    <MESSAGE value="Changes by Mateusz and Dominik" />
+    <MESSAGE value="Changes by gas" />
     <MESSAGE value="Removing some classes and making changes in code" />
     <option name="LAST_COMMIT_MESSAGE" value="Removing some classes and making changes in code" />
   </component>
