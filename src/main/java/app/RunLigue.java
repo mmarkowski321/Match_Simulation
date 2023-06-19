@@ -1,6 +1,9 @@
 package app;
 
+import io.GetNumber;
 import io.GetTeams;
+
+import java.util.Random;
 
 public class RunLigue {
     public Team[] teamsDataBase;
@@ -64,6 +67,28 @@ public class RunLigue {
         for (int i = 0 ; i < sortingTeams.length; i ++)
         {
             System.out.printf("%-16s | %5d | %6d | %4d | %5d | %5d | %+5d |\n",sortingTeams[i].getName(),sortingTeams[i].getGames(),sortingTeams[i].getPoints(),sortingTeams[i].getWins(),sortingTeams[i].getDraw(),sortingTeams[i].getLoses(),sortingTeams[i].getGoalsScored()-sortingTeams[i].getGoalsLosed());
+        }
+    }
+    public void runSingleMatch(boolean czyLosowy, RunLigue runLigue){
+        Team[] teamsDataBase = runLigue.teamsDataBase;
+        GetNumber getNumber = new GetNumber();
+        if(czyLosowy){
+            Random generator = new Random();
+            int homeTeam=generator.nextInt(teamsDataBase.length-1);
+            int awayTeam=homeTeam;
+            while (homeTeam==awayTeam){
+                awayTeam=generator.nextInt(teamsDataBase.length-1);
+            }
+            Match playerMatch = new PlayerMatch(teamsDataBase[homeTeam],teamsDataBase[awayTeam]);
+            playerMatch.simulate();
+            playerMatch.getWinner();
+        }
+        else{
+            int[] numbers = getNumber.getNumberOfChosenTeams();
+
+            Match playerMatch = new PlayerMatch(teamsDataBase[numbers[1]-1],teamsDataBase[numbers[0]-1]);
+            playerMatch.simulate();
+            playerMatch.getWinner();
         }
     }
 }

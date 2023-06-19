@@ -19,7 +19,7 @@ public class GetTeams {
         System.out.println("Stwórz własną drużyne!");
         String name = getNumber.getNameOfMyTeam();
         System.out.println("Dobra nazwa");
-        for (int i = 0;i < 4; i++){
+        for (int i = 1;i < 5; i++){
             String poz = " gracza";
             System.out.println("Podaj imie "+ i + poz);
             String name1 = getNumber.getString();
@@ -29,13 +29,13 @@ public class GetTeams {
             int attacking = getNumber.getNumberOfSkill();
             System.out.println("Podaj sile obrony (0-100) "+ i + poz);
             int defending = getNumber.getNumberOfSkill();
-            if (i < 2){
+            if (i < 3){
                 Attacker player = new Attacker(name1,lastName,attacking,defending);
-                players[i] = player;
+                players[i-1] = player;
             }
             else{
                 Defender player = new Defender(name1,lastName,attacking,defending);
-                players[i] = player;
+                players[i-1] = player;
             }
         }
         System.out.println("Forma drużyny (0-100): ");
