@@ -1,5 +1,6 @@
 package app;
 
+import app.TeamPlayers.Player;
 import com.diogonunes.jcolor.Attribute;
 import io.GetNumber;
 

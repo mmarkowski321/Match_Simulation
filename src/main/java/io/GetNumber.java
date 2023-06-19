@@ -13,6 +13,10 @@ public class GetNumber {
     public GetNumber() {
         this.scan = new Scanner(System.in);
     }
+    public String getString(){
+        String string = scan.nextLine();
+        return string;
+    }
 
     public int[] getNumberOfChosenTeams() {
         System.out.printf("1-Real Madryt\n2-FC Barcelona\n3-Chelsea\n4-Manchester_City\n5-Bayern Monachium\n");
@@ -63,6 +67,7 @@ public class GetNumber {
     public int getNumberOfSkill() {
         System.out.println("Wpisz wartosc 0 - 100");
         int skill = this.scan.nextInt();
+        scan.nextLine();
         if (skill <= 100 && skill >= 0) {
             return skill;
         } else {

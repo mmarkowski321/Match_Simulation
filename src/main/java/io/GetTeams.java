@@ -88,27 +88,30 @@ public class GetTeams {
                 int value1 = Integer.parseInt(values[1].trim());
                 int value2 = Integer.parseInt(values[2].trim());
                 int value3 = Integer.parseInt(values[3].trim());
-                int value4 = Integer.parseInt(values[4].trim());
-                int value5 = Integer.parseInt(values[5].trim());
-                boolean value6 = Boolean.parseBoolean(values[6].trim());
-                Team team = new Team(teamName,value1,value2,value3,value4,value5);
-                dataTeams[i] = team;
-                i++;
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (bufferedReader != null) {
-                try {
-                    bufferedReader.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
+
+                for (int indexInCurrentPl = 0; indexInCurrentPl < 4; indexInCurrentPl++) {
+                    currentPlayers[indexInCurrentPl] = players[indexInPlayerTable];
+                    indexInPlayerTable++;
+                }
+                    Team team = new Team(teamName, value1, value2, value3, currentPlayers);
+                    dataTeams[i] = team;
+                    i++;
+                }
+            } catch(IOException e){
+                e.printStackTrace();
+            } finally{
+                if (bufferedReader != null) {
+                    try {
+                        bufferedReader.close();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
             }
+            return dataTeams;
         }
-        return dataTeams;
-    }
 
 
 
 }
+

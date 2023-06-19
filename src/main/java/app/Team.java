@@ -1,16 +1,15 @@
 package app;
-
-
+import app.TeamPlayers.Player;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Random;
 
 public class Team {
-    private String name;
+    private final String name;
     private int attackStrength;
-    private int defenceStrength;
+    private final int defenceStrength;
     private int form;
-    private int tactics;
+    private final int tactics;
     public int gkAccurity;
     private int wins;
     private int loses;
@@ -19,11 +18,12 @@ public class Team {
     private int draw;
     private int points;
     private int games;
+    private Player[] players = new Player[4];
 
     public Team(String name, int attackStrength, int defenceStrength, int form, int tactics,int gkAccurity) {
         this.name = name;
-        this.attackStrength = attackStrength;
-        this.defenceStrength = defenceStrength;
+        this.attackStrength = getAttackStrength(players);
+        this.defenceStrength = getDefenseStrength(players);
         this.form = form;
         this.tactics = tactics;
         this.gkAccurity=gkAccurity;
@@ -34,8 +34,15 @@ public class Team {
         this.draw = 0;
         this.points = 0;
         this.games=0;
+        this.players = players;
     }
-
+    public void displayTeamPlayers(){
+        System.out.println("\nSklad naszej druzyny: ");
+        for (Player player : players) {
+            player.displayPlayers();
+        }
+        System.out.println();
+    }
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -46,6 +53,22 @@ public class Team {
     @Override
     public int hashCode() {
         return Objects.hash(name, attackStrength, defenceStrength, form, tactics, gkAccurity);
+    }
+    private int getAttackStrength(Player[] players) {
+        int attack = 0;
+        for (Player player : players) {
+            attack += player.getAttacking();
+        }
+        attack = attack/4;
+        return attack;
+    }
+    private int getDefenseStrength(Player[] players){
+        int defense =0;
+        for (Player player : players) {
+            defense += player.getDefending();
+        }
+        defense = defense/4;
+        return defense;
     }
 
     public String getName() {
@@ -142,4 +165,11 @@ public class Team {
         this.games = games;
     }
 
+    public Player[] getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(Player[] players) {
+        this.players = players;
+    }
 }

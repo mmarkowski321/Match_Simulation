@@ -5,21 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04369610-814b-4fbb-9bce-240b9fcb7ab2" name="Changes" comment="Removing some classes and making changes in code">
+      <change afterPath="$PROJECT_DIR$/src/DataPlayers" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/TeamPlayers/Attacker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/TeamPlayers/Defender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/app/TeamPlayers/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/io/PlayerDataReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/ILeague.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/ILeague.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/ILeague.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/IMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/IMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Match.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/app/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/RunLigue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/app/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" afterDir="false" />
     </list>
     <list id="a267148d-dee3-4690-a153-2298a4f15edf" name="Changes by gas" comment="Changes by gas" />
     <list id="3c7f3af0-c7fa-41c0-ab75-e3031f9cda71" name="Changes by komputer" comment="Changes by komputer" />
-    <list id="dfd125d5-a259-4c98-be45-c60b49e71a24" name="Changes by Mateusz" comment="" />
+    <list id="c2a40f50-a9b6-413b-99c2-0cd066cda18c" name="Changes by Mateusz" comment="">
+      <change beforePath="$PROJECT_DIR$/src/DataTeams" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataTeams" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/BotsMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/IMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/IMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/app/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/app/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/io/GetTeams.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,13 +63,74 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="0e189eef-2b6e-4975-846d-e33d872ff6bd" />
+        <option name="url" value="https://github.com/mmarkowski321/Match_Simulation.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/src/main/java/io/GetTeams.java">
+      <ranges>
+        <range start1="4" end1="4" start2="4" end2="8" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="13" end1="13" start2="17" end2="18" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="16" end1="21" start2="21" end2="45" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="22" end1="23" start2="46" end2="47" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="24" end1="25" start2="48" end2="49" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="26" end1="27" start2="50" end2="52" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="37" end1="37" start2="62" end2="65" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="45" end1="46" start2="73" end2="74" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="50" end1="54" start2="78" end2="83" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="73" end1="74" start2="102" end2="102" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="76" end1="76" start2="104" end2="107" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="85" end1="86" start2="116" end2="117" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="90" end1="110" start2="121" end2="143" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="114" end1="114" start2="147" end2="148" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/app/IMatch.java">
+      <ranges>
+        <range start1="12" end1="13" start2="12" end2="13" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="14" end1="17" start2="14" end2="17" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="18" end1="19" start2="18" end2="18" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/app/Team.java">
+      <ranges>
+        <range start1="1" end1="3" start2="1" end2="2" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="8" end1="9" start2="7" end2="8" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="10" end1="11" start2="9" end2="10" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="12" end1="13" start2="11" end2="12" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="21" end1="21" start2="20" end2="21" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="22" end1="23" start2="22" end2="23" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+        <range start1="24" end1="26" start2="24" end2="26" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="36" end1="36" start2="36" end2="37" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="37" end1="38" start2="38" end2="45" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="49" end1="49" start2="56" end2="72" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="144" end1="144" start2="167" end2="174" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/src/main/java/app/PlayerMatch.java">
+      <ranges>
+        <range start1="2" end1="2" start2="2" end2="3" changelist="04369610-814b-4fbb-9bce-240b9fcb7ab2" />
+        <range start1="17" end1="17" start2="18" end2="20" changelist="c2a40f50-a9b6-413b-99c2-0cd066cda18c" />
+      </ranges>
+    </file>
   </component>
   <component name="ProjectId" id="2QIv5mTJLshzSBI6VjOtf9EITN6" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -162,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686747912010</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Removing some classes and making changes in code">
+      <created>1687173332098</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687173332098</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

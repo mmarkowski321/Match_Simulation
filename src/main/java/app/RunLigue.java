@@ -2,7 +2,7 @@ package app;
 
 import io.GetTeams;
 
-public class RunLigue implements ILeague {
+public class RunLigue {
     public Team[] teamsDataBase;
 
     public RunLigue(Team[] teamsDataBase) {
@@ -12,7 +12,6 @@ public class RunLigue implements ILeague {
     public void roundRobin() {
         GetTeams getTeam = new GetTeams();
         Team myTeam = getTeam.makeTeam();
-
         Team[] teamsDataBase = getTeam.dataBaseTeams(myTeam);
         int numberOfTeams = teamsDataBase.length;
         for (int index1 = 0; index1 < numberOfTeams - 1; index1++) {
@@ -33,15 +32,38 @@ public class RunLigue implements ILeague {
     }
     public void startMatch(Team team1, Team team2, Team myTeam){
         if (team1.equals(myTeam) || team2.equals(myTeam)) {
-            PlayerMatch playerMatch = new PlayerMatch(team1,team2);
+            Match playerMatch = new PlayerMatch(team1,team2);
             playerMatch.simulate();
             playerMatch.updateStatistics();
             playerMatch.getWinner();
         } else {
-            BotsMatch botsMatch = new BotsMatch(team1,team2);
+            Match botsMatch = new BotsMatch(team1,team2);
             botsMatch.simulate();
             botsMatch.updateStatistics();
             botsMatch.getWinner();
+        }
+    }
+    private void table(Team[] teamsDataBase){
+        Team[] sortingTeams = teamsDataBase;
+        for (int j = 0; j < sortingTeams.length - 1; j++) {
+            for (int i = 0; i < sortingTeams.length - 1; i++) {
+                if (sortingTeams[i].getPoints() < sortingTeams[i + 1].getPoints()) {
+                    Team a = sortingTeams[i];
+                    sortingTeams[i] = sortingTeams[i + 1];
+                    sortingTeams[i + 1] = a;
+                } else if (sortingTeams[i].getPoints() == sortingTeams[i + 1].getPoints()) {
+                    if (sortingTeams[i].getGoalsScored() - sortingTeams[i].getGoalsLosed() < sortingTeams[i + 1].getGoalsScored() - sortingTeams[i + 1].getGoalsLosed()) {
+                        Team a = sortingTeams[i];
+                        sortingTeams[i] = sortingTeams[i + 1];
+                        sortingTeams[i + 1] = a;
+                    }
+                }
+            }
+        }
+        System.out.printf("Team             | games | points | wins | draws | loses | goals | \n");
+        for (int i = 0 ; i < sortingTeams.length; i ++)
+        {
+            System.out.printf("%-16s | %5d | %6d | %4d | %5d | %5d | %+5d |\n",sortingTeams[i].getName(),sortingTeams[i].getGames(),sortingTeams[i].getPoints(),sortingTeams[i].getWins(),sortingTeams[i].getDraw(),sortingTeams[i].getLoses(),sortingTeams[i].getGoalsScored()-sortingTeams[i].getGoalsLosed());
         }
     }
 }

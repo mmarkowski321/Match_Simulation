@@ -17,5 +17,4 @@ public interface IMatch {
         System.out.println(colorize("||", Attribute.TEXT_COLOR(90, 225, 22)) + colorize("13 14 15 16 17 18",Attribute.TEXT_COLOR(218, 45, 45)) + colorize("||", Attribute.TEXT_COLOR(90, 225, 22)));
     }
 
-
 }
