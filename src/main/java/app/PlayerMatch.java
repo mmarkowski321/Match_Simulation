@@ -16,6 +16,8 @@ public class PlayerMatch extends Match implements IMatch{
     @Override
     public void simulate() {
         System.out.println("Zaczyna sie mecz: " + homeTeam.getName() + " vs " + awayTeam.getName());
+
+        homeTeam.displayTeamPlayers();
         for (int minute = 1; minute <= 90; minute+=1){
             ourTeamPlay(getRandom(),awayTeam,homeTeam,minute);
         }

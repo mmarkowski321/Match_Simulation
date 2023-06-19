@@ -20,7 +20,7 @@ public class Team {
     private int games;
     private Player[] players = new Player[4];
 
-    public Team(String name, int attackStrength, int defenceStrength, int form, int tactics,int gkAccurity) {
+    public Team(String name, int form, int tactics,int gkAccurity, Player[] players) {
         this.name = name;
         this.attackStrength = getAttackStrength(players);
         this.defenceStrength = getDefenseStrength(players);

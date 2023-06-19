@@ -2,6 +2,10 @@ package io;
 
 
 import app.Team;
+import app.TeamPlayers.Attacker;
+import app.TeamPlayers.Defender;
+import app.TeamPlayers.Player;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -11,20 +15,37 @@ import java.io.IOException;
 public class GetTeams {
     public Team makeTeam() {
         GetNumber getNumber = new GetNumber();
+        Player[] players = new Player[4];
         System.out.println("Stwórz własną drużyne!");
         String name = getNumber.getNameOfMyTeam();
         System.out.println("Dobra nazwa");
-        System.out.println("Atak siła: ");
-        int attackStrength = getNumber.getNumberOfSkill();
-        System.out.println("Defensywna siła: ");
-        int defensePoints = getNumber.getNumberOfSkill();
-        System.out.println("Forma drużyny: ");
+        for (int i = 0;i < 4; i++){
+            String poz = " gracza";
+            System.out.println("Podaj imie "+ i + poz);
+            String name1 = getNumber.getString();
+            System.out.println("Podaj nazwisko "+ i + poz);
+            String lastName = getNumber.getString();
+            System.out.println("Podaj sile ataku (0-100) "+ i + poz);
+            int attacking = getNumber.getNumberOfSkill();
+            System.out.println("Podaj sile obrony (0-100) "+ i + poz);
+            int defending = getNumber.getNumberOfSkill();
+            if (i < 2){
+                Attacker player = new Attacker(name1,lastName,attacking,defending);
+                players[i] = player;
+            }
+            else{
+                Defender player = new Defender(name1,lastName,attacking,defending);
+                players[i] = player;
+            }
+        }
+        System.out.println("Forma drużyny (0-100): ");
         int form = getNumber.getNumberOfSkill();
-        System.out.println("Umiejętności taktyczne: " );
+        System.out.println("Umiejętności taktyczne druzyny (0-100): " );
         int tactics = getNumber.getNumberOfSkill();
-        System.out.println("Umiejętności bramkarza: ");
+        System.out.println("Umiejętności bramkarza (0-18): ");
         int gkAccurity = getNumber.getGoalkeeperSkill();
-        Team myTeam = new Team(name,attackStrength,defensePoints,form,tactics,gkAccurity);
+
+        Team myTeam = new Team(name,form,tactics,gkAccurity,players);
         return myTeam;
     }
 
@@ -35,6 +56,9 @@ public class GetTeams {
         Team[] dataTeams = new Team[6];
         BufferedReader bufferedReader = null;
         int i = 0;
+        PlayerDataReader playerDataReader = new PlayerDataReader();
+        Player[] players = playerDataReader.readPlayersFromFile();
+        int indexInPlayerTable = 0;
         try {
             File file = new File("src/DataTeams");
             FileReader fileReader = new FileReader(file);
@@ -43,15 +67,16 @@ public class GetTeams {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] values = line.split(",");
-
+                Player[] currentPlayers = new Player[4];
                 String teamName = values[0].trim();
                 int value1 = Integer.parseInt(values[1].trim());
                 int value2 = Integer.parseInt(values[2].trim());
                 int value3 = Integer.parseInt(values[3].trim());
-                int value4 = Integer.parseInt(values[4].trim());
-                int value5 = Integer.parseInt(values[5].trim());
-
-                Team team = new Team(teamName,value1,value2,value3,value4,value5);
+                for (int indexInCurrentPl = 0; indexInCurrentPl < 4; indexInCurrentPl ++) {
+                    currentPlayers[indexInCurrentPl] = players[indexInPlayerTable];
+                    indexInPlayerTable++;
+                }
+                Team team = new Team(teamName,value1,value2,value3,currentPlayers);
                 dataTeams[i] = team;
                 i++;
             }
@@ -71,9 +96,11 @@ public class GetTeams {
     }
     public Team[] dataBaseTeams() {
 
-
         Team[] dataTeams = new Team[5];
         BufferedReader bufferedReader = null;
+        PlayerDataReader playerDataReader = new PlayerDataReader();
+        Player[] players = playerDataReader.readPlayersFromFile();
+        int indexInPlayerTable = 0;
         int i = 0;
         try {
             File file = new File("src/DataTeams");
@@ -83,7 +110,7 @@ public class GetTeams {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
                 String[] values = line.split(",");
-
+                Player[] currentPlayers = new Player[4];
                 String teamName = values[0].trim();
                 int value1 = Integer.parseInt(values[1].trim());
                 int value2 = Integer.parseInt(values[2].trim());

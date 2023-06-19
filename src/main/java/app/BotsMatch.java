@@ -16,6 +16,7 @@ public class BotsMatch extends Match implements IMatch{
 
     @Override
     public void simulate() {
+
         for (int minute = 1; minute <= 90; minute += 1) {
             botsTeamsPlay(getRandom(),awayTeam, homeTeam);
         }
