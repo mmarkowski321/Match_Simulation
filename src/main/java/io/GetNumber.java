@@ -7,17 +7,37 @@ import java.util.Scanner;
 
 import static com.diogonunes.jcolor.Ansi.colorize;
 
+/**
+ * The type Get number.
+ */
 public class GetNumber {
+    /**
+     * The Scan.
+     */
     Scanner scan;
 
+    /**
+     * Instantiates a new Get number.
+     */
     public GetNumber() {
         this.scan = new Scanner(System.in);
     }
+
+    /**
+     * Get string string.
+     *
+     * @return the string
+     */
     public String getString(){
         String string = scan.nextLine();
         return string;
     }
 
+    /**
+     * Get number of chosen teams int [ ].
+     *
+     * @return the int [ ]
+     */
     public int[] getNumberOfChosenTeams() {
         System.out.printf("1-Real Madryt\n2-FC Barcelona\n3-Chelsea\n4-Manchester_City\n5-Bayern Monachium\n");
         System.out.println("Wybierz swoja druzyne: ");
@@ -40,6 +60,11 @@ public class GetNumber {
         }
     }
 
+    /**
+     * Gets menu number.
+     *
+     * @return the menu number
+     */
     public int getMenuNumber() {
         System.out.printf("Wybierz tryb gry: \n-rozegraj pelna lige(wybierz 1)\n-zagraj mecz wybranymi zespolami(wybierz 2)\n-zagraj mecz losowymi zespolami(wybierz 3)\n-zakoncz program(wybierz 4)\n");
         int shot = this.scan.nextInt();
@@ -52,7 +77,11 @@ public class GetNumber {
     }
 
 
-
+    /**
+     * Gets number where to shot.
+     *
+     * @return the number where to shot
+     */
     public int getNumberWhereToShot() {
         System.out.println("Wyceluj w bramke podajac odpowiednia liczbe: ");
         int shot = this.scan.nextInt();
@@ -64,6 +93,11 @@ public class GetNumber {
         }
     }
 
+    /**
+     * Gets number of skill.
+     *
+     * @return the number of skill
+     */
     public int getNumberOfSkill() {
         System.out.println("Wpisz wartosc 0 - 100");
         int skill = this.scan.nextInt();
@@ -76,12 +110,22 @@ public class GetNumber {
         }
     }
 
+    /**
+     * Gets name of my team.
+     *
+     * @return the name of my team
+     */
     public String getNameOfMyTeam() {
         System.out.println("Wpisz nazwe twojej druzyny");
         String nameOfMyTeam = this.scan.nextLine();
         return nameOfMyTeam;
     }
 
+    /**
+     * Gets goalkeeper skill.
+     *
+     * @return the goalkeeper skill
+     */
     public int getGoalkeeperSkill() {
         System.out.println("Wpisz wartosc skillu bramkarza 0 - 18");
         int skill = this.scan.nextInt();
@@ -92,6 +136,12 @@ public class GetNumber {
             return this.getGoalkeeperSkill();
         }
     }
+
+    /**
+     * Gets command.
+     *
+     * @param ifGoal the if goal
+     */
     public void getCommand(boolean ifGoal) {
         String[] goalCommand = {
                 "I to jest to, czego od niego oczekiwaliśmy! Fantastyczne wykonanie akcji i piękne trafienie. To będzie zapamiętane jako jedno z najlepszych goli sezonu!",

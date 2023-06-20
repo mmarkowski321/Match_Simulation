@@ -5,9 +5,22 @@ import io.GetTeams;
 
 import java.util.Random;
 
+/**
+ * The type Menu.
+ */
 public class Menu {
+    /**
+     * The Get number.
+     */
     GetNumber getNumber = new GetNumber();
+    /**
+     * The Choice.
+     */
     public int choice;
+
+    /**
+     * Display menu.
+     */
     public void displayMenu(){
         GetTeams getTeams = new GetTeams();
         RunLigue runLigue = new RunLigue(getTeams.dataBaseTeams());

@@ -5,13 +5,27 @@ import io.GetTeams;
 
 import java.util.Random;
 
+/**
+ * The type Run ligue.
+ */
 public class RunLigue {
+    /**
+     * The Teams data base.
+     */
     public Team[] teamsDataBase;
 
+    /**
+     * Instantiates a new Run ligue.
+     *
+     * @param teamsDataBase the teams data base
+     */
     public RunLigue(Team[] teamsDataBase) {
         this.teamsDataBase = teamsDataBase;
     }
 
+    /**
+     * Round robin.
+     */
     public void roundRobin() {
         GetTeams getTeam = new GetTeams();
         Team myTeam = getTeam.makeTeam();
@@ -33,6 +47,14 @@ public class RunLigue {
         }
         table(teamsDataBase);
     }
+
+    /**
+     * Start match.
+     *
+     * @param team1  the team 1
+     * @param team2  the team 2
+     * @param myTeam the my team
+     */
     public void startMatch(Team team1, Team team2, Team myTeam){
         if (team1.equals(myTeam) || team2.equals(myTeam)) {
             Match playerMatch = new PlayerMatch(team1,team2);
@@ -69,6 +91,13 @@ public class RunLigue {
             System.out.printf("%-16s | %5d | %6d | %4d | %5d | %5d | %+5d |\n",sortingTeams[i].getName(),sortingTeams[i].getGames(),sortingTeams[i].getPoints(),sortingTeams[i].getWins(),sortingTeams[i].getDraw(),sortingTeams[i].getLoses(),sortingTeams[i].getGoalsScored()-sortingTeams[i].getGoalsLosed());
         }
     }
+
+    /**
+     * Run single match.
+     *
+     * @param czyLosowy the czy losowy
+     * @param runLigue  the run ligue
+     */
     public void runSingleMatch(boolean czyLosowy, RunLigue runLigue){
         Team[] teamsDataBase = runLigue.teamsDataBase;
         GetNumber getNumber = new GetNumber();

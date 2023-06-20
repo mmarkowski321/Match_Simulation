@@ -9,7 +9,16 @@ import java.util.Random;
 
 import static com.diogonunes.jcolor.Ansi.colorize;
 
+/**
+ * The type Bots match.
+ */
 public class BotsMatch extends Match implements IMatch{
+    /**
+     * Instantiates a new Bots match.
+     *
+     * @param homeTeam the home team
+     * @param awayTeam the away team
+     */
     public BotsMatch(Team homeTeam, Team awayTeam){
         super(homeTeam,awayTeam);
         }

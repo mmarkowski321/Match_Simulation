@@ -9,7 +9,16 @@ import java.util.Random;
 
 import static com.diogonunes.jcolor.Ansi.colorize;
 
+/**
+ * The type Player match.
+ */
 public class PlayerMatch extends Match implements IMatch{
+    /**
+     * Instantiates a new Player match.
+     *
+     * @param awayTeam the away team
+     * @param homeTeam the home team
+     */
     public PlayerMatch(Team awayTeam, Team homeTeam){
         super(awayTeam,homeTeam);
     }

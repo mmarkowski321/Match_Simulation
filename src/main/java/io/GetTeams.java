@@ -12,7 +12,15 @@ import java.io.FileReader;
 import java.io.IOException;
 
 
+/**
+ * The type Get teams.
+ */
 public class GetTeams {
+    /**
+     * Make team team.
+     *
+     * @return the team
+     */
     public Team makeTeam() {
         GetNumber getNumber = new GetNumber();
         Player[] players = new Player[4];
@@ -50,6 +58,12 @@ public class GetTeams {
     }
 
 
+    /**
+     * Data base teams team [ ].
+     *
+     * @param myTeam the my team
+     * @return the team [ ]
+     */
     public Team[] dataBaseTeams(Team myTeam) {
 
 
@@ -94,6 +108,12 @@ public class GetTeams {
         dataTeams[5] = myTeam;
         return dataTeams;
     }
+
+    /**
+     * Data base teams team [ ].
+     *
+     * @return the team [ ]
+     */
     public Team[] dataBaseTeams() {
 
         Team[] dataTeams = new Team[5];

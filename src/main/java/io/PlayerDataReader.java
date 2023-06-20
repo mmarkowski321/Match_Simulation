@@ -7,7 +7,16 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+
+/**
+ * The type Player data reader.
+ */
 public class PlayerDataReader {
+    /**
+     * Read players from file player [ ].
+     *
+     * @return the player [ ]
+     */
     public Player[] readPlayersFromFile() {
         Player[] players = new Player[20];
         try (BufferedReader reader = new BufferedReader(new FileReader("src/DataPlayers"))) {
